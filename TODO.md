@@ -1,0 +1,3 @@
+- [x] Tambahkan HTML untuk tombol floating WhatsApp di index.html sebelum </body>
+- [x] Tambahkan CSS untuk styling tombol floating di style.css
+- [x] Test tombol di browser
