@@ -1,18 +1,18 @@
 const navToggle = document.getElementById("nav-toggle");
-const navMenu = document.getElementById("navMenu");
+const navMenu = document.getElementById("nav-menu");
 
 navToggle.addEventListener("click", () => {
-    navMenu.classlist.toggle("active");
+    navMenu.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav-link").forEach(link=> {
     link.addEventListener("click", () => {
-        navMenu.classlist.remove("active");
+        navMenu.classList.remove("active");
     });
 });
 
 const navLink = document.querySelectorAll(".nav-link");
-const sections = document.querySelectorAll("section");
+const sections = document.querySelectorAll("section, #music");
 
 window.addEventListener("scroll", () => {
     let scrollpos = window.pageYOffset;
@@ -71,4 +71,14 @@ contactForm.addEventListener("submit", (e) => {
     alert("pesan berhasil dikirim!\nTerimakasih telah menghubungi abang :*");
 
 contactForm.reset();
+});
+
+// Auto-play music on page load
+window.addEventListener('load', () => {
+    const audio = document.querySelector('audio');
+    if (audio) {
+        audio.play().catch(error => {
+            console.log('Autoplay blocked by browser:', error);
+        });
+    }
 });

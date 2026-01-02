@@ -489,3 +489,18 @@ html {
 .whatsapp-float i {
     margin: 0;
 }
+
+/* Music Section */
+.music-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.music-player iframe {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}

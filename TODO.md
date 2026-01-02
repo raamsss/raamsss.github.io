@@ -1,3 +1,6 @@
-- [x] Tambahkan HTML untuk tombol floating WhatsApp di index.html sebelum </body>
-- [x] Tambahkan CSS untuk styling tombol floating di style.css
-- [x] Test tombol di browser
+- [x] Add "Musik" nav link in index.html navbar
+- [x] Insert new music section with YouTube embed between projects and contact in index.html
+- [x] Add styles for music section in style.css
+- [x] Update script.js to include music section in scroll handler
+- [x] Change music player to use local MP3 file "My Chemical Romance - Welcome To The Black Parade.mp3"
+- [x] Add autoplay to music player when entering the page
